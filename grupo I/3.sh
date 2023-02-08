@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lineas= 'cat ./ficheros_scripts/listado.txt | wc -l'
+total= 'cat ./ficheros_scripts/listado.txt | wc -l'
 
 linux=0
 linx_u=0
@@ -9,7 +9,7 @@ windows_u=0
 
 for i in 'seq 1 $total'
 do
-    linea='cat ./ficheros_scripts/listado.txt | head -n$i | tal -n1'
+    linea='cat ./ficheros_scripts/listado.txt | head -n$i | tail -n1'
     so= "echo $linea | awk '{print $2}'"
     proc= "echo $linea | awk'{print $3}'"
 
