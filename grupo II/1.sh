@@ -13,6 +13,6 @@ do
 
     $precipitaciones= $precipitaciones+$grados
 done
-resultado=$precipitaciones/$total
+resultado=$((precipitaciones/total))
 echo "La media de precipitaciones es $resultado" 
 sleep 5
